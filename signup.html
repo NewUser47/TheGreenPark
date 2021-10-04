@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>The Green Park | Shipping Culture</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background: url('signup.jpeg');
+        }
+        .container{
+            position: relative;
+
+            width: 400px;
+            background: white;
+            opacity: 0.9;
+            padding: 60px 40px;
+        }
+        h2{
+            font-size: 36px;
+            margin-bottom: 60px;
+            color: black;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        #form div, #form button{
+            margin: 25px 0;
+            position: relative;
+            height: 50px;
+            width: 100%;
+        }
+        #form input{
+            height: 100%;
+            width: 100%;
+            border:1px solid silver;
+            padding-left: 15px;
+            outline: none;
+            font-size: 19px;
+            transition: 0.4s;
+        }
+        #form input:focus{
+            border: 1px solid #1da1f2;
+        }
+        /* , #form input:not(:focus) ~ label */
+        #form input:focus ~ label {  
+            /* transform: translateY(-33px); */
+            /* background: white; */
+            /* font-size: 16px; */
+            color: #1da1f2;
+            font-size: 16px;
+        }
+        #form label{
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            transform: translateY(-33px);
+            pointer-events: none;
+            background: white;
+            font-size: 18px;
+            color: black;
+            transition: 0.4s;
+        }
+        #form button{
+            margin-top: 20px;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            width: 40%;
+            height: 80%;
+            border: 1px solid grey;
+            cursor: pointer;
+            background:#418fbe94;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <form method="POST" action="/signup" id="form">
+        <h2 id="signup">SignUp</h2>
+        <div><input type="email" name="email"> <label for="email" class="inpelt">Email Id:</label></div>
+        
+        <div><input type="password" name="password">  <label for="password" class="inpelt">Create a Password:</label></div>
+        
+        <div><input type="password" name="cpassword"> <label for="password" class="inpelt">Enter the password again:</label></div>
+        <div class="button">
+            <button type="submit" onclick="return checkPass();">SignUp</button>
+        </div>
+    </div>
+        
+    </form>
+    
+    <script>
+        function checkPass() {
+            var form = document.getElementById('form');
+            if (form.password.value != form.cpassword.value) {
+                alert("Passwords not matching! Enter Again.");
+                form.cpassword.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>

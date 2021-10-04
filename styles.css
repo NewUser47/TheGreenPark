@@ -1,0 +1,282 @@
+/* NAVBAR */
+.navcont{
+    display: flex;
+    flex-direction: row;
+    background: repeating-linear-gradient(45deg, #005e2f, black 20%, #5c4a41 21%);
+    position: absolute;
+    width: 98.7%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+}
+.navcont li{
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 50px;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 22px;
+}
+#logo{
+    font-size: 25px;
+}
+.navcont a{
+    text-decoration: none;
+    background-color: transparent;
+    align-items: center;
+    color: white;
+}
+#navsearch{
+    height: 45px;
+    margin: auto 120px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid rgb(61, 43, 43);
+    text-indent: 15px;
+    margin-right: 100px;
+}
+#search{
+    height: 35px;
+    width: 35px;
+    position: relative;
+    float: left;
+    left: 775px;
+    cursor: pointer;
+    top: 18px;
+}
+/* INTRO  */
+.introcont{
+    margin-top: 120px;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+}
+.intro{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 25px;
+    font-size: 22px;
+    /* background-color: #cc5500; */
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* transition: 0.2s; */
+}
+.intro:hover{
+    color: #000;
+    border: none;
+    background: #c2ffa0;
+    box-shadow: 0 0 10px #c2ffa0, 0 0 40px #c2ffa0, 0 0 80px #c2ffa0;
+    transition: 1s;
+    cursor: pointer;
+    transition-delay: 0.5s;
+  }
+
+
+
+/* FOOTER */
+.footercont ul{
+    margin-top: 5px;
+}
+.footercont ul div{
+    /* display: inline-block; */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+.footercont ul div:hover{  
+    font-size: 20px;
+}
+.footercont li{
+    list-style: none;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.footercont a{
+    text-decoration: none;
+    color: white;
+
+}
+.footercont a:hover{
+    /* font-size: 18px; */
+    transition: 0.25s;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+.footercont{
+    display: grid;
+    border: 2px solid black;
+    /* border-bottom: 0; */
+    margin-top: 150px;
+    color: white;
+    background: repeating-linear-gradient(135deg, #005e2f, black 20%, #5c4a41 21%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px;
+}
+.footeritems{
+    text-align: center;
+    color: white;
+    justify-content: center;
+    border:2px solid black;
+    background: repeating-linear-gradient(45deg, #005e2f, black 20%, #5c4a41 21%);
+    margin-top: 25px;
+    /* border-top: 0; */
+}
+
+/* SIGNIN */
+section#signin{
+box-sizing: border-box;
+position: relative;
+margin:0;
+margin-top: 140px;
+color: black;
+padding: 0;
+font-family: 'Ubuntu', sans-serif;
+min-height: 60vh;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+section#signin h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+section#signin .container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px, rgba(0,0,0, 0.1);
+    overflow: hidden;
+}
+section#signin .container .user{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+section#signin .container .user .imgBox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background:#ff0;
+    transition: 0.5s;
+}
+section#signin .container .user .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section#signin .container .user .formBox{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: #E6E6FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+section#signin .container .user .formBox form input{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+section#signin .container .user .formBox form input[type="submit"]{
+    max-width: 100px;
+    background: #677eff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+section#signin .container .user .formBox form .signup{
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+section#signin .container .user .formBox form .signup a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #677eff;
+}
+section#signin .container .signupBox{
+  pointer-events: none;
+}
+section#signin .container.active .signupBox{
+  pointer-events: initial;
+}
+section#signin .container .signupBox .formBox{
+   left: 100%;
+}
+section#signin .container.active .signupBox .formBox{
+   left: 0;
+}
+section#signin .container .signupBox .imgBox{
+  left: -100%;
+}
+section#signin .container.active .signupBox .imgBox{
+  left: 0;
+}
+section#signin .container .signinBox .formBox{
+  left: 0;
+}
+section#signin .container.active .signinBox .formBox{
+  left: 100%;
+}
+section#signin .container .signinpBox .imgBox{
+ left: 0;
+}
+section#signin .container.active .signinBox .imgBox{
+ left: 100%;
+}
+ 
+.container2{
+margin-top: 80px;
+padding: 30px;
+font-size: 22px;
+}
+.signinBox2, .signupBox2{
+text-align: center;
+font-size: 20px;
+letter-spacing: 1px;
+}
+.signlinks{
+text-decoration: none;
+background-color: #418fbe94;
+border-radius: 12px;
+font-size: 20px;
+}
+
